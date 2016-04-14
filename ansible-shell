@@ -375,5 +375,6 @@ if __name__ == '__main__':
     atexit.register(readline.write_history_file, histfile)
 
     (options, args) = AnsibleShell.parse_opts()
+    #TODO(tamsky): process --limit argument here, once, as a call to 'do_cd()'
     AnsibleShell(options, args).cmdloop()
 
